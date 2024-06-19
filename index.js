@@ -21,6 +21,7 @@ const reducer = (state, action) => {
   return state;
 }; // //Reducers are functions that take the current state and an action as arguments, and return a new state result. In other words, (state, action) => newState
 const store = createStore(reducer, initialState); // createStore function is used to create a store expect a reducer as the first argument and an initial state as the second argument
-console.log(store.getState()); // { value: 0 }
-store.dispatch(increment);
+//console.log(store.getState()); // { value: 0 }
+store.dispatch(increment); // dispatch is used to dispatch an action to the store
 console.log(store.getState()); // { value: 3 }
+console.log(store.dispatch(increment)); // { type: 'INCREMENT', payload: 3 }
