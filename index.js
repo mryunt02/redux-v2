@@ -14,6 +14,7 @@ composeFunction = compose(function1, function2, function3); // compose function 
 // Redux createStore
 const initialState = { value: 0 };
 const increment = { type: "INCREMENT", payload: 3 };
+
 const reducer = (state, action) => {
   if (action.type === "INCREMENT") {
     return { value: state.value + action.payload };
@@ -25,3 +26,11 @@ const store = createStore(reducer, initialState); // createStore function is use
 store.dispatch(increment); // dispatch is used to dispatch an action to the store
 console.log(store.getState()); // { value: 3 }
 console.log(store.dispatch(increment)); // { type: 'INCREMENT', payload: 3 }
+
+// subscription is used to listen to the store changes
+const subscriber = () => {
+  console.log("SUBSCRIBER:", store.getState());
+};
+store.subscribe(subscriber); // when the store changes the subscriber function will be called
+store.dispatch(increment); // { value: 6 }
+store.dispatch(increment); // { value: 9 }
