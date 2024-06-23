@@ -1,7 +1,7 @@
 <h1>Redux is all about this 5 methods👇:</h1> </br>
 <img src="https://github.com/mryunt02/redux-v2/assets/90159617/a9a591a7-0a39-478c-8a0b-9fb66d8e53ee" />
 
-<h2>and if you check commits and the final index.js file you can understand these 5 methods</h2>
+<h2>and if you check commits and the final index.js file, you can understand these 5 methods</h2>
 <h3>Commits:</h3>
 <ol>
   <li>Compose: <a href="https://github.com/mryunt02/redux-v2/commit/43233801214500f0749e633cc9eca13f2af13b3a">in This link...</a></li>
