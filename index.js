@@ -50,7 +50,7 @@ const logMiddleware = (store) => (next) => (action) => {
 const store = createStore(
   reducer,
   initialState,
-  applyMiddleware(logMiddleware) // Middleware
+  applyMiddleware(logMiddleware) // Middleware provides a third-party extension point between dispatching an action, and the moment it reaches the reducer. They can be used for logging, crash reporting, handling asynchronous actions, and more.
 );
 const subscriber = () => {
   console.log("SUBSCRIBE", store.getState()); // Subscribe
