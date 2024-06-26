@@ -1,3 +1,5 @@
+import { bindActionCreators } from 'redux';
+
 export const INCREMENT = "INCREMENT";
 export const DECREMENT = "DECREMENT";
 export const SET = "SET";
