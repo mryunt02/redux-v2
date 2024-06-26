@@ -1,4 +1,4 @@
-export const initialState = { count: 0 };
+export const initialState = { count: 400 };
 export const reducer = (state, action) => {
   switch (action.type) {
     case "INCREMENT":
